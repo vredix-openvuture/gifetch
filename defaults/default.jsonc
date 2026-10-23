@@ -1,0 +1,41 @@
+// Default fastfetch config for gifetch, used wherever no -c/-rc is given. The logo is always forced off; gifetch draws the GIF.
+// No display.key.width: it aligns via absolute column jumps, which break when the
+// output is shifted right next to the GIF. Keys are padded by hand instead.
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": { "type": "none" },
+    "display": {
+        "separator": "  ",
+        "color": { "keys": "#a69c9b", "output": "#ffffff", "separator": "#5c5250" },
+        "percent": { "type": ["num", "bar"], "color": { "green": "#9fb59a", "yellow": "#d8b46a", "red": "#d97a6c" } },
+        "bar": { "width": 12, "char": { "elapsed": "■", "total": "·" }, "border": { "left": "", "right": "" } }
+    },
+    "modules": [
+        { "type": "title", "format": " {##ffffff}{user-name}{##a69c9b}@{host-name}" },
+        { "type": "custom", "format": " {##5c5250}──────────────────────────────────────" },
+
+        { "type": "custom", "format": "{##d8b46a} ▍ system" },
+        { "type": "os",       "key": "   os       " },
+        { "type": "kernel",   "key": "   kernel   " },
+        { "type": "uptime",   "key": "   uptime   " },
+        { "type": "packages", "key": "   pkgs     " },
+        "break",
+
+        { "type": "custom", "format": "{##d8b46a} ▍ desktop" },
+        { "type": "wm",       "key": "   wm       " },
+        { "type": "terminal", "key": "   term     " },
+        { "type": "shell",    "key": "   shell    " },
+        { "type": "display",  "key": "   display  ", "compactType": "original-with-refresh-rate" },
+        "break",
+
+        { "type": "custom", "format": "{##d8b46a} ▍ hardware" },
+        { "type": "cpu",      "key": "   cpu      ", "format": "{name} ({cores-logical}) @ {freq-max}" },
+        { "type": "gpu",      "key": "   gpu      ", "format": "{name}" },
+        { "type": "memory",   "key": "   memory   ", "format": "{used} / {total}  {percentage-bar}" },
+        { "type": "disk",     "key": "   disk     ", "folders": "/", "format": "{size-used} / {size-total}  {size-percentage-bar}" },
+        { "type": "localip",  "key": "   ip       ", "compact": true },
+        "break",
+
+        { "type": "colors", "symbol": "circle", "paddingLeft": 2 }
+    ]
+}

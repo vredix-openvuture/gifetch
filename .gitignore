@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.backup/
+
+# Internal: Claude Code, release notes and maintainer scripts
+.claude/
+claude-important.md
+CHANGELOG.md
+tools/make-banner.sh
+tools/record-shot.sh
+
+# AUR packaging, published to its own AUR repo
+packaging/
