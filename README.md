@@ -81,6 +81,10 @@ gifetch -p cat                           # start it
 <br>
 <br>
 
-<a href="https://ko-fi.com/openvuture"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me" height="30"></a>
+<div align="center">
 
-<a href="https://openvuture.com"><img src="assets/icons/openvuture-button.svg" alt="OpenVuture" height="30"></a> <a href="https://openvuture.shop"><img src="assets/icons/openvuture-shop-button.svg" alt="OpenVuture Shop" height="30"></a>
+<a href="https://openvuture.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ov-site-dark.svg"><img src="assets/icons/ov-site-light.svg" alt="OpenVuture" height="45"></picture></a><a href="https://openvuture.shop"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ov-shop-dark.svg"><img src="assets/icons/ov-shop-light.svg" alt="OpenVuture Shop" height="45"></picture></a><a href="https://ko-fi.com/openvuture"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ov-kofi-dark.svg"><img src="assets/icons/ov-kofi-light.svg" alt="Support on Ko-fi" height="45"></picture></a>
+
+<a href="https://openvuture.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ov-madeby-dark.svg"><img src="assets/icons/ov-madeby-light.svg" alt="made by OpenVuture" height="19"></picture></a>
+
+</div>
